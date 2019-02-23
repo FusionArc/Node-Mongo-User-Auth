@@ -1,4 +1,4 @@
-# nodevue
+# client
 
 ## Project setup
 ```
