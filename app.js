@@ -25,6 +25,9 @@ app.use(cors());
 // Set Static Folder
 app.use(express.static(path.join(__dirname, 'public')));
 
+//Handle Single Page App
+app.get(/.*/, (req, res) => res.sendFile(__dirname + '/client/public/'));
+
 // Body Parser Middleware
 app.use(bodyParser.json());
 
